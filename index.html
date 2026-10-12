@@ -1,191 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laura Yao - PhD Student, UNC Chapel Hill</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Laura Yao is a Computer Science PhD student at UNC Chapel Hill researching reliable multimodal and agentic AI systems.">
+<meta name="theme-color" content="#f8f7f3"><meta property="og:title" content="Laura Yao · Reliable multimodal & agentic AI"><meta property="og:description" content="Research, selected publications, and news from Laura Yao at UNC Chapel Hill."><meta property="og:type" content="website"><meta property="og:url" content="https://gss223.github.io/"><meta property="og:image" content="https://gss223.github.io/assets/laura-yao.webp">
+<title>Laura Yao · UNC Chapel Hill</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Laura Yao</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Bio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#timeline">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#news">News</a></li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <img src="profile.jpg" alt="Laura Yao" class="img-fluid rounded-circle profile-img">
-                </div>
-                <div class="col-md-8">
-                    <h1>Laura Yao</h1>
-                    <h2>PhD Student, UNC Chapel Hill</h2>
-                    <div class="hero-links">
-                        <a href="mailto:lyao@cs.unc.edu" class="hero-link">
-                            <i class="fas fa-envelope"></i>
-                            <span>lyao@cs.unc.edu</span>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=TJ8P55IAAAAJ&hl=en" class="hero-link">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Google Scholar</span>
-                        </a>
-                        <a href="lyaocvaug2025.pdf" class="hero-link">
-                            <i class="fas fa-file-alt"></i>
-                            <span>CV</span>
-                        </a>
-                        <a href="https://github.com/gss223" class="hero-link">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/laurajyao" class="hero-link">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-
-
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">Bio</h2>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>I am a first-year PhD student in the UNITES lab at the University of North Carolina, Chapel Hill. My research interests include multimodal learning, LLMs, and AI4Science.</p>
-                    <p>Currently working under the supervision of Prof. Tianlong Chen at UNC. I have previously worked with Prof. Chenyan Xiong and Prof. Florian Metze at CMU during undergrad.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Timeline/CV Section -->
-    <section id="timeline" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">CV</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>PhD in Computer Science</h3>
-                        <p class="timeline-date">2025 - Present</p>
-                        <p>University of North Carolina, Chapel Hill</p>
-                        <p>Working in the UNITES Lab advised by Prof. Tianlong Chen</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Software Engineer at Databricks</h3>
-                        <p class="timeline-date">2024 - 2025</p>
-                        <p>Network Control Plane Team</p>
-                        <p>Working on multi-cloud networking infrastructure</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>BSc in Computer Science</h3>
-                        <p class="timeline-date">2020 - 2023</p>
-                        <p>Carnegie Mellon University</p>
-                        <p>Dean's List with High Honors</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-4">
-                <a href="lyaocvaug2025.pdf" class="btn btn-primary">Download Full CV</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="publication-list">
-                <div class="publication-item">
-                    <h3>Audio-journey: Open domain latent diffusion based text-to-audio generation</h3>
-                    <p class="authors">J Michaels, JB Li, L Yao, L Yu, Z Wood-Doughty, F Metze</p>
-                    <p class="venue">ICASSP 2024</p>
-                    <div class="publication-links">
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10448220" class="btn btn-sm btn-primary">Paper</a>
-                    </div>
-                </div>
-                <div class="publication-item">
-                    <h3>Audio-journey: Efficient visual+ llm-aided audio encodec diffusion</h3>
-                    <p class="authors">JB Li, JS Michaels, L Yao, L Yu, Z Wood-Doughty, F Metze</p>
-                    <p class="venue">Workshop on Efficient Systems for Foundation Models @ ICML2023</p>
-                    <div class="publication-links">
-                        <a href="https://openreview.net/pdf?id=vzMXsTCdFB" class="btn btn-sm btn-primary">Paper</a>
-                    </div>
-                </div>
-                <div class="publication-item">
-                    <h3>CMU-VIDION: Modified BLIP with Audio for Video to Text Description</h3>
-                    <p class="authors">L Yao, JB Li, F Metze</p>
-                    <p class="venue">TRECVID Workshop 2022</p>
-                    <div class="publication-links">
-                        <a href="https://www-nlpir.nist.gov/projects/tvpubs/tv22.papers/vidion.pdf" class="btn btn-sm btn-primary">Paper</a>
-                    </div>
-                </div>
-                <div class="publication-item">
-                    <h3>"It is the Future": Exploring Parent Perspectives of CS Education</h3>
-                    <p class="authors">J Solyst, L Yao, A Axon, A Ogan</p>
-                    <p class="venue">SIGCSE 2022</p>
-                    <div class="publication-links">
-                        <a href="https://dl.acm.org/doi/pdf/10.1145/3478431.3499411" class="btn btn-sm btn-primary">Paper</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-            
-
-
-
-    <!-- Footer with Contact Info -->
-    <footer class="footer bg-dark text-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Contact Information</h4>
-                    <p><i class="fas fa-envelope"></i> lyao@cs.unc.edu</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Connect With Me</h4>
-                    <div class="social-links">
-                        <a href="https://github.com/gss223" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/laurajyao" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:lyao@cs.unc.edu" class="social-icon"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-4">
-            <p class="text-center">&copy; 2024 Laura Yao. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html> 
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="container nav" aria-label="Main navigation"><a class="wordmark" href="#about">Laura Yao<span aria-hidden="true">.</span></a><div class="nav-links"><a href="#news">News</a><a href="#publications">Research</a><a href="#experience">Experience</a><a class="nav-cv" href="assets/Laura_Yao_CV.pdf">CV <span aria-hidden="true">↗</span></a></div></nav></header>
+<main id="main" class="container">
+<section id="about" class="hero" aria-labelledby="hero-title">
+<div class="hero-copy"><p class="eyebrow"><span class="dot" aria-hidden="true"></span> PhD student · UNC Chapel Hill</p><h1 id="hero-title">Hi, I’m Laura<span class="accent">.</span></h1><p class="hero-statement">Building reliable<br><span class="serif">multimodal &amp; agentic AI.</span></p>
+<div class="bio"><p>I’m a Computer Science PhD student in the UNITES Lab at the University of North Carolina at Chapel Hill, advised by Prof. Tianlong Chen.</p><p>I study how AI systems reason, connect evidence across modalities, and learn to be more reliable—with applications in scientific discovery.</p><p>Previously, I worked on agentic AI for biosurveillance at Lawrence Livermore National Laboratory and built multi-cloud networking infrastructure at Databricks. I received my B.S. in Computer Science from Carnegie Mellon, where I worked with Profs. Chenyan Xiong and Florian Metze.</p></div>
+<div class="profile-links"><a class="email" href="mailto:lyao@cs.unc.edu">Get in touch <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=TJ8P55IAAAAJ&amp;hl=en">Scholar <span aria-hidden="true">↗</span></a><a href="https://github.com/gss223">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/laurajyao">LinkedIn <span aria-hidden="true">↗</span></a></div></div>
+<figure class="portrait"><div class="portrait-frame"><img src="assets/laura-yao.webp" alt="Laura Yao smiling in front of a city skyline" width="960" height="1280" fetchpriority="high"></div><figcaption><span>Laura Yao</span><span>Chapel Hill, NC</span></figcaption></figure>
+</section>
+<div class="research-strip" aria-label="Research interests"><span class="eyebrow">Thinking about</span><span>Agentic AI</span><span>Multimodal learning</span><span>AI for science</span><span>Reliability &amp; interpretability</span></div>
+<section id="news" class="section news-section" aria-labelledby="news-title"><div class="section-heading"><div><p class="eyebrow">Lately</p><h2 id="news-title">News &amp; highlights<span class="accent">.</span></h2></div><span class="section-note">Research, milestones, and a few celebrations</span></div>
+<div class="news-list">
+<div class="news-row"><span class="news-date">2026</span><p><span class="news-label">Research</span> <strong>Words Before Pixels</strong> at NeurIPS 2026, on selective modality routing for vision-language model unlearning.</p></div>
+<div class="news-row"><span class="news-date">Summer 2026</span><p><span class="news-label">Experience</span> Spent the summer at <strong>Lawrence Livermore National Laboratory</strong>, working with Dr. Bhavya Kailkhura on agentic AI for scientific discovery.</p></div>
+<div class="news-row"><span class="news-date">2026</span><p><span class="news-label">Research</span> Papers at <strong>RSS, ICLR, and ACL Findings</strong>: robot design, reasoning faithfulness, and multi-agent self-correction.</p></div>
+<div class="news-row"><span class="news-date">Award</span><p><span class="news-label award">Teaching</span> Received the <strong>John M. Glotzer Teaching Assistant Award</strong> at UNC.</p></div>
+<details class="news-archive"><summary>More highlights <span aria-hidden="true">+</span></summary><div class="news-row"><span class="news-date">Aug 2025</span><p>Started my <strong>PhD in Computer Science at UNC Chapel Hill</strong>, advised by Prof. Tianlong Chen.</p></div><div class="news-row"><span class="news-date">Awards</span><p>Recognized with the <strong>Operational Excellence Award</strong> and <strong>Teamwork Award</strong> at Databricks.</p></div><div class="news-row"><span class="news-date">Dec 2023</span><p>Graduated from <strong>Carnegie Mellon University</strong> with a B.S. in Computer Science and a minor in Language Technology.</p></div></details></div></section>
+<section id="publications" class="section" aria-labelledby="papers-title"><div class="section-heading"><div><p class="eyebrow">Ideas into work</p><h2 id="papers-title">Selected papers<span class="accent">.</span></h2></div><div class="paper-controls" role="group" aria-label="Publication display" hidden><button type="button" data-view="selected" aria-pressed="true">Selected</button><button type="button" data-view="all" aria-pressed="false">All papers <span>8</span></button></div></div><p class="section-intro">Multimodal models, reasoning, and agents that we can understand and trust. <span class="contribution">* Equal contribution.</span></p><div class="paper-list"><article class="paper">
+ <div class="paper-art routing"><img src="assets/routing.svg" alt="" loading="lazy" width="180" height="140"></div>
+ <div class="paper-body"><div class="paper-meta"><span class="venue">NeurIPS 2026</span><span class="topic">Multimodal learning · Unlearning</span></div>
+ <h3>Words Before Pixels: Selective Modality Routing for Vision-Language Model Unlearning</h3><p class="authors"><strong>Laura Yao</strong>, Haochen Zhang, Jinhao Duan, Sijia Liu, Tianlong Chen</p><p class="paper-description">Understanding how language and vision contribute to selective unlearning in vision-language models.</p><div class="paper-links"></div></div></article>
+<article class="paper">
+ <div class="paper-art robot"><img src="assets/robot.svg" alt="" loading="lazy" width="180" height="140"></div>
+ <div class="paper-body"><div class="paper-meta"><span class="venue">RSS 2026</span><span class="topic">Agentic AI · Robotics</span></div>
+ <h3>Bridging Language and Physics: Automated Design of Continuum Robots with Large Language Models</h3><p class="authors"><strong>Laura Yao</strong>*, Jingyi Chen*, Mohan Zhang*, Yingtai Ni, Jianmin Ji, Jie Peng, Song Wang, Tianlong Chen</p><p class="paper-description">Connecting language-based design with physical feedback to create continuum robots.</p><div class="paper-links"><a href="https://arxiv.org/abs/2609.08220">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/UNITES-Lab/AID-SR">Code <span aria-hidden="true">↗</span></a></div></div></article>
+<article class="paper">
+ <div class="paper-art reasoning"><img src="assets/reasoning.svg" alt="" loading="lazy" width="180" height="140"></div>
+ <div class="paper-body"><div class="paper-meta"><span class="venue">ICLR 2026</span><span class="topic">Reasoning · Reliability</span></div>
+ <h3>FaithCoT-Bench: Benchmarking Instance-Level Faithfulness of Chain-of-Thought Reasoning</h3><p class="authors">Xu Shen, Song Wang, Zhen Tan, <strong>Laura Yao</strong>, Xinyu Zhao, Kaidi Xu, Xin Wang, Tianlong Chen</p><p class="paper-description">Evaluating whether a model’s chain of thought faithfully reflects its reasoning.</p><div class="paper-links"><a href="https://arxiv.org/abs/2510.04040">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/se7esx/FaithCoT-BENCH">Code <span aria-hidden="true">↗</span></a></div></div></article>
+<article class="paper">
+ <div class="paper-art agents"><img src="assets/agents.svg" alt="" loading="lazy" width="180" height="140"></div>
+ <div class="paper-body"><div class="paper-meta"><span class="venue">ACL 2026 Findings</span><span class="topic">Multi-agent systems · Self-correction</span></div>
+ <h3>Metacognitive Self-Correction for Multi-Agent System via Prototype-Guided Next-Execution Reconstruction</h3><p class="authors">Xu Shen*, Qi Zhang*, Song Wang, Zhen Tan, Xinyu Zhao, <strong>Laura Yao</strong>, Vaishnav Tadiparthi, Hossein Nourkhiz Mahjoub, Ehsan Moradi Pari, Kwonjoon Lee, Tianlong Chen</p><p class="paper-description">Detecting and correcting faulty steps before errors spread through a team of agents.</p><div class="paper-links"><a href="https://arxiv.org/abs/2510.14319">Paper <span aria-hidden="true">↗</span></a></div></div></article>
+<article class="paper">
+ <div class="paper-art audio"><img src="assets/audio.svg" alt="" loading="lazy" width="180" height="140"></div>
+ <div class="paper-body"><div class="paper-meta"><span class="venue">ICASSP 2024</span><span class="topic">Multimodal generation · Audio</span></div>
+ <h3>Audio-Journey: Open Domain Latent Diffusion Based Text-to-Audio Generation</h3><p class="authors">Jackson Michaels*, Juncheng B. Li*, <strong>Laura Yao</strong>, Lijun Yu, Zach Wood-Doughty, Florian Metze</p><p class="paper-description">Generating audio from natural-language descriptions with latent diffusion.</p><div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/10448220">Paper <span aria-hidden="true">↗</span></a></div></div></article>
+<article class="paper additional-paper">
+ <div class="paper-art audio"><img src="assets/audio.svg" alt="" loading="lazy" width="180" height="140"></div>
+ <div class="paper-body"><div class="paper-meta"><span class="venue">ICML 2023 Workshop</span><span class="topic">Efficient Systems for Foundation Models</span></div>
+ <h3>Audio-Journey: Efficient Visual + LLM-Aided Audio Encodec Diffusion</h3><p class="authors">Juncheng B. Li, Jackson S. Michaels, <strong>Laura Yao</strong>, Lijun Yu, Zach Wood-Doughty, Florian Metze</p><div class="paper-links"><a href="https://openreview.net/pdf?id=vzMXsTCdFB">Paper <span aria-hidden="true">↗</span></a></div></div></article>
+<article class="paper additional-paper">
+ <div class="paper-art routing"><img src="assets/routing.svg" alt="" loading="lazy" width="180" height="140"></div>
+ <div class="paper-body"><div class="paper-meta"><span class="venue">TRECVID 2022</span><span class="topic">Multimodal learning · Video</span></div>
+ <h3>CMU-VIDION: Modified BLIP With Audio for Video to Text Description</h3><p class="authors"><strong>Laura Yao</strong>, Juncheng B. Li, Florian Metze</p><div class="paper-links"><a href="https://www-nlpir.nist.gov/projects/tvpubs/tv22.papers/vidion.pdf">Paper <span aria-hidden="true">↗</span></a></div></div></article>
+<article class="paper additional-paper">
+ <div class="paper-art reasoning"><img src="assets/reasoning.svg" alt="" loading="lazy" width="180" height="140"></div>
+ <div class="paper-body"><div class="paper-meta"><span class="venue">SIGCSE 2022</span><span class="topic">Computer science education</span></div>
+ <h3>“It is the Future”: Exploring Parent Perspectives of CS Education</h3><p class="authors">J Solyst, <strong>Laura Yao</strong>, A Axon, A Ogan</p><div class="paper-links"><a href="https://dl.acm.org/doi/10.1145/3478431.3499411">Paper <span aria-hidden="true">↗</span></a></div></div></article></div><a class="text-link scholar-link" href="https://scholar.google.com/citations?user=TJ8P55IAAAAJ&amp;hl=en">View my Google Scholar profile <span aria-hidden="true">↗</span></a>
+<details class="ongoing"><summary>Ongoing research <span aria-hidden="true">+</span></summary><div class="ongoing-content"><p class="muted">Manuscripts under review, as listed in my CV.</p><ul><li><strong>Geometry- and Relation-Aware Diffusion for EEG Spatial Super-Resolution</strong><span>Under review · ICLR 2027</span></li><li><strong>Cross-Modal Latent Influence: Patch-Level Training Sample Attribution for Vision-Language Models</strong><span>Under review · ICLR 2027</span></li><li><strong>GALA: Generation-Aware Cross-Modal Alignment for Text-to-Time-Series Synthesis</strong><span>Under review · AAAI 2027</span></li></ul><p>Current projects also explore auditable vision-language foundation models and gene-guided single-cell modeling for disease-associated cell states.</p></div></details></section>
+<section id="experience" class="section" aria-labelledby="experience-title"><div class="section-heading"><div><p class="eyebrow">Along the way</p><h2 id="experience-title">Experience &amp; education<span class="accent">.</span></h2></div><a class="text-link" href="assets/Laura_Yao_CV.pdf">Full CV <span aria-hidden="true">↗</span></a></div>
+<div class="experience-grid"><div><h3 class="column-title">Research &amp; industry</h3><div class="experience-item"><span class="experience-date">2025 — Present</span><h4>UNC Chapel Hill</h4><p>Research Assistant · UNITES Lab</p><p class="muted">Multimodal AI and multi-agent systems<br>Advisor: Prof. Tianlong Chen</p></div><div class="experience-item"><span class="experience-date">May — Aug 2026</span><h4>Lawrence Livermore National Laboratory</h4><p>Research Intern</p><p class="muted">Agentic scientific discovery for biosurveillance<br>Mentor: Dr. Bhavya Kailkhura</p></div><div class="experience-item"><span class="experience-date">Feb 2024 — Sep 2025</span><h4>Databricks</h4><p>Software Engineer · Network Control Plane</p><p class="muted">Multi-cloud networking, serverless network billing, and infrastructure reliability.</p></div><div class="experience-item"><span class="experience-date">2021 — 2023</span><h4>Carnegie Mellon University</h4><p>Research Assistant · LTI &amp; HCII</p><p class="muted">Multimodal retrieval, audio generation, video understanding, and CS education.</p></div><p class="small-note">Previously: engineering internships at Databricks (2023) and Meta (2021, 2022).</p></div>
+<div><h3 class="column-title">Education</h3><div class="experience-item"><span class="experience-date">Aug 2025 — Present</span><h4>University of North Carolina at Chapel Hill</h4><p>Ph.D. in Computer Science</p></div><div class="experience-item"><span class="experience-date">Aug 2020 — Dec 2023</span><h4>Carnegie Mellon University</h4><p>B.S. in Computer Science</p><p class="muted">Minor in Language Technology · GPA 3.88/4.0</p></div><div class="teaching"><h3 class="column-title">Teaching</h3><p><strong>Artificial Intelligence</strong><span>UNC · Teaching Assistant · Spring 2026</span></p><p><strong>Computer Organization</strong><span>UNC · Teaching Assistant · Fall 2025</span></p><p><strong>Great Practical Ideas of CS</strong><span>CMU · Head Teaching Assistant · Fall 2021–2023</span></p><p><strong>Introduction to Computer Systems</strong><span>CMU · Teaching Assistant · Spring 2022</span></p></div></div></div></section>
+<section id="honors" class="section honors-section" aria-labelledby="honors-title"><div class="section-heading"><div><p class="eyebrow">Recognition</p><h2 id="honors-title">Awards &amp; honors<span class="accent">.</span></h2></div></div><ul class="honors-list"><li><strong>John M. Glotzer Teaching Assistant Award</strong><span>UNC Chapel Hill</span></li><li><strong>Operational Excellence &amp; Teamwork Awards</strong><span>Databricks</span></li><li><strong>Dean’s List</strong><span>Carnegie Mellon University</span></li><li><strong>Python Challenge · 1st Place</strong><span>Citadel × Amplify Trading Challenge</span></li><li><strong>Regeneron Science Talent Search Scholar</strong><span>Regeneron</span></li><li><strong>Mathworks Math Modeling · 1st Runner-up</strong><span>$15,000 scholarship</span></li><li><strong>National Merit Winner</strong><span>$2,500 scholarship</span></li></ul></section>
+<footer class="footer"><div><p class="eyebrow">Let’s connect</p><h2>Always happy to talk<br><span class="serif">research and new ideas.</span></h2><a class="contact-email" href="mailto:lyao@cs.unc.edu">lyao@cs.unc.edu <span aria-hidden="true">↗</span></a></div><div class="footer-bottom"><span>© <span id="year">2026</span> Laura Yao</span><span>UNC Chapel Hill</span><a href="#about">Back to top ↑</a></div></footer>
+</main></body></html>

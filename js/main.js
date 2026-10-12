@@ -1,59 +1,39 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            window.scrollTo({
-                top: target.offsetTop - 70,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
+'use strict';
 
-// Form submission handling
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = {
-            name: this.querySelector('input[type="text"]').value,
-            email: this.querySelector('input[type="email"]').value,
-            message: this.querySelector('textarea').value
-        };
-
-        // Here you would typically send the data to a server
-        console.log('Form submitted:', formData);
-        
-        // Show success message
-        alert('Thank you for your message! I will get back to you soon.');
-        
-        // Clear form
-        this.reset();
+// Content stays readable without JavaScript; enhancement adds the selected view.
+const controls = document.querySelector('.paper-controls');
+const additionalPapers = document.querySelectorAll('.additional-paper');
+const papersTitle = document.querySelector('#papers-title');
+if (controls && papersTitle) {
+  const selectView = (view) => {
+    const selected = view === 'selected';
+    additionalPapers.forEach((paper) => { paper.hidden = selected; });
+    controls.querySelectorAll('button').forEach((button) => {
+      button.setAttribute('aria-pressed', String(button.dataset.view === view));
     });
+    papersTitle.innerHTML = `${selected ? 'Selected' : 'All'} papers<span class="accent">.</span>`;
+  };
+  controls.hidden = false;
+  controls.addEventListener('click', (event) => {
+    const button = event.target.closest('button[data-view]');
+    if (button) selectView(button.dataset.view);
+  });
+  selectView('selected');
 }
 
-// Add active class to nav items on scroll
-window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    let current = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop - 100) {
-            current = section.getAttribute('id');
-        }
+const year = document.querySelector('#year');
+if (year) year.textContent = String(new Date().getFullYear());
+
+if ('IntersectionObserver' in window) {
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach((link) => {
+        if (link.hash === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
     });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-        }
-    });
-}); 
+  }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
+  document.querySelectorAll('main > section[id]').forEach((section) => observer.observe(section));
+}
