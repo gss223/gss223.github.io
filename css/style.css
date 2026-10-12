@@ -331,7 +331,7 @@ h2 {
 .news-archive {
   margin-top:17px
 }
-.news-archive summary,.ongoing summary {
+.news-archive summary {
   list-style:none;
   display:flex;
   align-items:center;
@@ -502,30 +502,6 @@ details[open]>summary span {
 .scholar-link {
   display:inline-block;
   margin-top:21px
-}
-.ongoing {
-  border:1px solid var(--line);
-  border-radius:6px;
-  padding:17px 20px;
-  margin-top:27px
-}
-.ongoing-content {
-  font-size:13px
-}
-.ongoing-content ul {
-  padding-left:18px
-}
-.ongoing-content li {
-  margin-bottom:15px
-}
-.ongoing-content strong {
-  font-weight:500
-}
-.ongoing-content li span {
-  display:block;
-  color:var(--muted);
-  font-size:11px;
-  margin-top:4px
 }
 .experience-grid {
   display:grid;
@@ -961,7 +937,7 @@ h4 {
   }
 }
 @media print {
-  .site-header,.paper-controls,.paper-art,.profile-links,.research-strip,.news-archive,.ongoing,.footer-bottom,.skip-link {
+  .site-header,.paper-controls,.paper-art,.profile-links,.research-strip,.news-archive,.footer-bottom,.skip-link {
     display:none!important
   }
   .container {

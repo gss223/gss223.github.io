@@ -23,7 +23,7 @@ Then open http://localhost:8000. Stop the server with Ctrl+C.
 
 ## Content sources and editorial notes
 
-The supplied October 2026 CV is the source for current affiliations, venue labels, author lists, awards, teaching, and manuscripts under review. The public site supplies the established social links and older publications. The newest five papers are selected; all eight are available using the publication control, including the two older papers omitted from the new CV.
+The supplied October 2026 CV is the source for current affiliations, venue labels, author lists, awards, and teaching. The public site supplies the established social links and older publications. The newest five papers are selected; all eight are available using the publication control, including the two older papers omitted from the new CV.
 
 Verified public links:
 
@@ -31,7 +31,7 @@ Verified public links:
 - FaithCoT-Bench: https://arxiv.org/abs/2510.04040 and https://github.com/se7esx/FaithCoT-BENCH
 - Metacognitive self-correction: https://arxiv.org/abs/2510.14319
 
-No public paper link was found for *Words Before Pixels*, so that entry has no paper button. The robot-design author order follows the supplied CV; the arXiv version lists Jingyi Chen, Mohan Zhang, and Laura Yao in a different order. The website intentionally keeps the CV author order, as confirmed by Laura. Awards have no invented dates. Under-review manuscripts appear separately from publications.
+No public paper link was found for *Words Before Pixels*, so that entry has no paper button. The robot-design author order follows the supplied CV; the arXiv version lists Jingyi Chen, Mohan Zhang, and Laura Yao in a different order. The website intentionally keeps the CV author order, as confirmed by Laura. Awards have no invented dates. Ongoing research is currently omitted from the website.
 
 `assets/Laura_Yao_CV.pdf` is an unchanged copy of the supplied `Laura_Yao_CV (5).pdf` with a cleaner name. The original CV outside this checkout and the repository’s older CV are preserved.
 
